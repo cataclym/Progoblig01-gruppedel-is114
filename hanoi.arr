@@ -20,40 +20,61 @@ bilde-flyttet-rod-sirkel = put-image(pinne, 100, 100, put-image(gronn-sirkel, 10
 bilde-2 = put-image(pinne, 300, 100, put-image(rod-sirkel, 300, 100, bilde-flyttet-rod-sirkel))
 bilde-2
 
-# Fjerner gronn fra venstre pinne
-bilde-flyttet-gronn-sirkel = put-image(pinne, 100, 100, put-image(bla-sirkel, 100, 100, bilde-2))
-# Plasserer gronn på midtre pinne
-bilde-3 = put-image(pinne, 300, 100, put-image(gronn-sirkel, 300, 100, bilde-flyttet-gronn-sirkel))
+# Fjerner grønn fra venstre pinne
+bilde-flyttet-gronn-sirkel-hoyre = put-image(pinne, 100, 100, put-image(gronn-sirkel, 500, 100, bilde-2))
+# Plasserer grønn på høyre pinne
+bilde-3 = put-image(pinne, 500, 100, put-image(pinne, 100, 100, put-image(bla-sirkel, 100, 100, bilde-flyttet-gronn-sirkel-hoyre)))
 bilde-3
 
-# Fjerner bla fra venstre pinne
-bilde-flyttet-bla-sirkel = put-image(pinne, 100, 100, put-image(gul-sirkel, 100, 100, bilde-2))
-# Plasserer bla på midtre pinne
-bilde-4 = put-image(pinne, 300, 100, put-image(bla-sirkel, 300, 100, bilde-flyttet-bla-sirkel))
+# Flytter rød til høyre pinne
+bilde-4 = put-image(pinne, 500, 100, put-image(pinne, 100, 100, put-image(rod-sirkel, 500, 100, put-image(gronn-sirkel, 500, 100, put-image(bla-sirkel, 100, 100, put-image(gul-sirkel, 100, 100, scene))))))
 bilde-4
 
-# Skaper senen på nytt med gul sirkel på midtre pinne
-bilde-flytte-gul-sirkel = put-image(pinne, 300, 100, put-image(gul-sirkel, 300, 100, scene))
-bilde-flytte-gul-sirkel
-
-# Skaper senen på nytt med bla sirkel på midtre pinne
-bilde-plassert-gul-sirkel = put-image(pinne, 300, 100, put-image(bla-sirkel, 300, 100, scene))
-# Plasserer gul på høyre pinne
-bilde-5 = put-image(pinne, 500, 100, put-image(gul-sirkel, 500, 100, bilde-plassert-gul-sirkel))
+# Flytter blå til midten
+bilde-5 = put-image(pinne, 300, 100, put-image(pinne, 100, 100, put-image(gul-sirkel, 100, 100, put-image(bla-sirkel, 300, 100, bilde-4))))
 bilde-5
 
-# Skaper senen på nytt med gronn sirkel på midtre pinne
-bilde-plassert-bla-sirkel = put-image(pinne, 300, 100, put-image(gronn-sirkel, 300, 100, scene))
-# Plasserer bla på høyre pinne
-bilde-6 = put-image(pinne, 500, 100, put-image(bla-sirkel, 500, 100, put-image(gul-sirkel, 500, 100, bilde-plassert-bla-sirkel)))
+# Flytter rød til venstre pinne
+bilde-6 = put-image(pinne, 500, 100, put-image(pinne, 100, 100, put-image(rod-sirkel, 100, 100, put-image(gronn-sirkel, 500, 100, bilde-5))))
 bilde-6
 
-# Skaper senen på nytt med rod på midtre pinne
-bilde-plassert-gronn-sirkel = put-image(pinne, 300, 100, put-image(rod-sirkel, 300, 100, scene))
-# Plasserer  gronn på høyre pinne
-bilde-7 = put-image(pinne, 500, 100, put-image(gronn-sirkel, 500, 100, put-image(bla-sirkel, 500, 100, put-image(gul-sirkel, 500, 100, bilde-plassert-gronn-sirkel))))
+# Flytter grønn til midten
+bilde-7 = put-image(pinne, 100, 100, put-image(pinne, 500, 100, put-image(pinne, 300, 100, put-image(rod-sirkel, 100, 100, put-image(gronn-sirkel, 300, 100, put-image(bla-sirkel, 300, 100, put-image(gul-sirkel, 100, 100, scene)))))))
 bilde-7
 
-# Skaper senen på nytt og plasserer alle sirklene på høyre pinne
-bilde-8 = put-image(pinne, 500, 100, put-image(rod-sirkel, 500, 100, put-image(gronn-sirkel, 500, 100, put-image(bla-sirkel, 500, 100, put-image(gul-sirkel, 500, 100, scene)))))
+# Flytte rød til midten
+bilde-8 = put-image(pinne, 100, 100, put-image(pinne, 300, 100, put-image(gul-sirkel, 100, 100, put-image(rod-sirkel, 300, 100, bilde-7))))
 bilde-8
+
+# Flytte gul til høyre
+bilde-9 = put-image(pinne, 500, 100, put-image(pinne, 300, 100, put-image(rod-sirkel, 300, 100, put-image(gronn-sirkel, 300, 100, put-image(bla-sirkel, 300, 100, put-image(gul-sirkel, 500, 100, scene))))))
+bilde-9
+
+# Flytte rød til høyre
+bilde-10 = put-image(pinne, 500, 100, put-image(pinne, 300, 100, put-image(gronn-sirkel, 300, 100, put-image(rod-sirkel, 500, 100, bilde-9))))
+bilde-10
+
+# Grønn til venstre
+bilde-11 = put-image(pinne, 100, 100, put-image(pinne, 300, 100, put-image(bla-sirkel, 300, 100, put-image(gronn-sirkel, 100, 100, bilde-10))))
+bilde-11
+
+# Rød til venstre
+bilde-12 = put-image(pinne, 100, 100, put-image(pinne, 500, 100, put-image(gul-sirkel, 500, 100, put-image(rod-sirkel, 100, 100, bilde-11))))
+bilde-12
+
+# Blå til høyre
+bilde-13 = put-image(pinne, 500, 100, put-image(pinne, 100, 100, put-image(rod-sirkel, 100, 100, put-image(gronn-sirkel, 100, 100, put-image(bla-sirkel, 500, 100, put-image(gul-sirkel, 500, 100, scene))))))
+bilde-13
+
+
+# Flytte rød til midten
+bilde-14 = put-image(pinne, 100, 100, put-image(pinne, 300, 100, put-image(gronn-sirkel, 100, 100, put-image(rod-sirkel, 300, 100, bilde-13))))
+bilde-14
+
+# Flytte grønn til høyre
+bilde-15 = put-image(pinne, 500, 100, put-image(pinne, 300, 100, put-image(rod-sirkel, 300, 100, put-image(gronn-sirkel, 500, 100, put-image(bla-sirkel, 500, 100, put-image(gul-sirkel, 500, 100, scene))))))
+bilde-15
+
+# Flytte rød til høyre
+bilde-16 = put-image(pinne, 500, 100, put-image(rod-sirkel, 500, 100, put-image(gronn-sirkel, 500, 100, put-image(bla-sirkel, 500, 100, put-image(gul-sirkel, 500, 100, scene)))))
+bilde-16
